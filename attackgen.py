@@ -13,7 +13,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 def read_config():
     """Read and parse the configuration file."""
     config = configparser.ConfigParser(interpolation=None)
-    config.read('config.ini')
+    config.read('/root/attacks/config.ini')
     return config
 
 def get_base_url(config):
